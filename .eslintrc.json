@@ -1,0 +1,73 @@
+{
+    "extends": "eslint:recommended",
+    "env": {
+        "es6": true
+    },
+    "globals": {
+        "console": true,
+        "window": true,
+        "require": true,
+        "module": true,
+        "document": true,
+        "__dirname": true,
+        "process": true
+    },
+    "rules": {
+        // // ES6
+        "arrow-parens": ["error", "always"],
+        // Formatting and Style
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
+        "no-trailing-spaces": ["error"],
+        // Error Prevention
+        "no-undef": ["error"],
+        "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }], // Ignore private arguments
+        "no-console": "warn", // Warn but allow in development
+        "no-var": "error",
+        "no-redeclare": ["error"],
+        // Best Practices
+        "eqeqeq": ["error"],
+        "strict": ["error"],
+        "no-shadow": ["error"],
+        "no-empty": ["error"],
+        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+        "no-multi-spaces": ["error"],
+        "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+        "comma-spacing": ["error", { "before": false, "after": true }],
+        "computed-property-spacing": ["error", "always"],
+        "func-call-spacing": ["error", "never"],
+        "implicit-arrow-linebreak": ["error", "beside"],
+        "key-spacing": ["error", { "beforeColon": false }],
+        "keyword-spacing": ["error", { "before": true }],
+        "max-statements-per-line": ["error", { "max": 1 }],
+        "multiline-ternary": ["error", "always-multiline"],
+        "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 1 }],
+        "no-extra-semi": "error",
+        "no-mixed-spaces-and-tabs": "error",
+        "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+        "no-whitespace-before-property": "error",
+        "nonblock-statement-body-position": ["error", "beside"],
+        "one-var-declaration-per-line": ["error", "always"],
+        "padded-blocks": ["error", "never"],
+        "padding-line-between-statements": [
+            "error",
+            { 
+                "blankLine": "always", 
+                "prev": "*", 
+                "next": "return" 
+            }
+        ],
+        "semi-style": ["error", "last"],
+        "space-before-blocks": [
+            "error", 
+            {
+                "functions": "always",
+                "keywords": "always",
+                "classes": "always"
+            }
+        ],
+        "space-in-parens": ["error", "always"],
+        "template-curly-spacing": ["error", "always"]
+    }
+}

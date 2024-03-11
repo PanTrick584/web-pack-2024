@@ -2,9 +2,10 @@
   "name": "webpack",
   "private": true,
   "scripts": {
+    "lint:eslint": "eslint --fix src",
+    "lint:stylelint": "stylelint 'src/**/*.scss' --fix",
     "build": "cross-env NODE_ENV=production webpack --mode=production",
-    "watch": "webpack --watch --mode=development",
-    "dev": "webpack"
+    "dev": "webpack --watch --mode=development && npm run lint:eslint && lint:stylelint"
   },
   "devDependencies": {
     "@babel/core": "^7.23.9",
@@ -12,15 +13,21 @@
     "babel-loader": "^9.1.3",
     "cross-env": "^7.0.3",
     "css-loader": "^6.10.0",
+    "eslint": "^7.32.0",
+    "eslint-loader": "^4.0.2",
     "mini-css-extract-plugin": "^2.8.0",
     "postcss": "^8.4.35",
     "postcss-loader": "^8.1.0",
     "postcss-preset-env": "^9.3.0",
     "sass": "^1.71.0",
     "sass-loader": "^14.1.0",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-webpack-plugin": "^5.0.0",
     "webpack": "^5.90.2",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.2"
+    "webpack-dev-server": "^5.0.2",
+    "webpack-manifest-plugin": "^5.0.0"
   },
   "dependencies": {
     "-": "^0.0.1"

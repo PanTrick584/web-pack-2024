@@ -1,0 +1,26 @@
+{
+    "extends": ["stylelint-config-standard"],
+    "plugins": ["stylelint-scss"],
+    "rules": {
+        "property-no-vendor-prefix": true,
+        "no-duplicate-selectors": true,
+        "selector-max-compound-selectors": [2, 4],
+        "at-rule-no-unknown": true,
+        "scss/dollar-variable-colon-space-before": "always",
+        "rule-empty-line-before": [
+            "always",
+            {
+            "except": [
+                "first-nested"
+            ],
+            "ignore": [
+                "after-comment"
+            ]
+            }
+        ],
+        "block-no-empty": true,
+        "no-empty-source": true,
+        "color-no-invalid-hex": true,
+        "no-irregular-whitespace": true
+    }
+}
