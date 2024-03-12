@@ -1,6 +1,6 @@
 {
     "extends": ["stylelint-config-standard-scss"],
-    "plugins": ["stylelint-scss"],
+    "plugins": ["stylelint-scss", "stylelint-prettier"],
     "rules": {
         "color-no-invalid-hex": true,
         "at-rule-no-unknown": true,

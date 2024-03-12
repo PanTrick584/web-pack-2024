@@ -1,10 +1,11 @@
 // console.log("hello");
-const dupa = "dupa";
-dupa;
-if (dupa === "niedupa") dupa === "cosinnego";
-if (dupa === "duzeogóry") {
-    dupa === "cosinnego";
+const witaj = "witaj";
+
+if (witaj === "żegnaj") witaj === "witajżegnaj";
+if (witaj === "niewitaj") {
+    witaj === "spadaj";
 }
+
 const murek = [1, 2];
 murek;
 const siema =
