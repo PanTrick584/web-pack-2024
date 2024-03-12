@@ -1,5 +1,5 @@
 {
-    "extends": "eslint:recommended",
+    "extends": ["eslint:recommended", "prettier"],
     "env": {
         "es6": true
     },
@@ -52,22 +52,21 @@
         "padded-blocks": ["error", "never"],
         "padding-line-between-statements": [
             "error",
-            { 
-                "blankLine": "always", 
-                "prev": "*", 
-                "next": "return" 
+            {
+                "blankLine": "always",
+                "prev": "*",
+                "next": "return"
             }
         ],
         "semi-style": ["error", "last"],
         "space-before-blocks": [
-            "error", 
+            "error",
             {
                 "functions": "always",
                 "keywords": "always",
                 "classes": "always"
             }
         ],
-        "space-in-parens": ["error", "always"],
         "template-curly-spacing": ["error", "always"]
     }
 }

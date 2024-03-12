@@ -2,10 +2,18 @@ body {
     background-color: black;
     color: black;
     font-size: 24px;
-    line-height: 2; background-position: center;
+    line-height: 2;
+    background-position: center;
 
+    .siema {
+        color: white;
+
+        .cotam {
+            border-color: black;
+        }
+    }
 }
 
-.siema{
+.siema {
     color: black;
 }
