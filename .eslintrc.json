@@ -1,5 +1,5 @@
 {
-    "extends": ["eslint:recommended",  "plugin:prettier/recommended"],
+    "extends": ["eslint:recommended"],
     "env": {
         "es6": true
     },
@@ -13,20 +13,16 @@
         "process": true
     },
     "rules": {
-        // // ES6
         "arrow-parens": ["error", "always"],
-        // Formatting and Style
         "indent": ["error", 4, { "SwitchCase": 1 }],
         "quotes": ["error", "double"],
         "semi": ["error", "always"],
         "no-trailing-spaces": ["error"],
-        // Error Prevention
         "no-undef": ["error"],
-        "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }], // Ignore private arguments
+        "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
         "no-console": "warn", // Warn but allow in development
         "no-var": "error",
         "no-redeclare": ["error"],
-        // Best Practices
         "eqeqeq": ["error"],
         "strict": ["error"],
         "no-shadow": ["error"],

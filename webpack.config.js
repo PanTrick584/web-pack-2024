@@ -44,13 +44,14 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin( {filename: devMode ? "styles.css" : "styles.[contenthash].css"} ),
         new StylelintPlugin( {
-            configFile: ".stylelintrc.json",
-            files: "**/*.scss",
+            // configFile: "./.stylelintrc.json",
             fix: true,
-            extensions: ['.scss']
+            extensions: ['.scss', '.css'],
+            formatter: "compact",
+            files: path.join('src', '**/*.s?(a|c)ss')
         } ),
         new ESLintPlugin({
-            extensions: ['.js', '.jsx'],
+            extensions: ['.js'],
             exclude: 'node_modules',
             overrideConfigFile: './.eslintrc.json',
             fix: true
@@ -59,5 +60,6 @@ module.exports = {
     devServer: {
         contentBase: "./dist",
         hot: true
-    }
+    },
+    watch: true
 };

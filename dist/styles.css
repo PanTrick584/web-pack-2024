@@ -17,6 +17,7 @@ body .siema .cotam {
 
 .siema {
   color: black;
+  transition: all 0.3s;
 }
 
 /*# sourceMappingURL=styles.css.map*/

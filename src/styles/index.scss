@@ -2,16 +2,13 @@ body {
     background-color: black;
     color: black;
     font-size: 24px;
-    line-height: 2; background-position: center;
+    line-height: 2;
+    background-position: center;
 
-
-
-
-    
     .siema {
-                     color: white;
+        color: white;
 
-  .cotam {
+        .cotam {
             border-color: black;
         }
     }
@@ -19,9 +16,5 @@ body {
 
 .siema {
     color: black;
+    transition: all  .3s;
 }
-
-
-
-
-
